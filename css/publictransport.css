@@ -1,0 +1,28 @@
+#publictransport-stationboard {
+}
+
+#publictransport-stationboard tr td.publictransport-departure {
+  text-align: left;
+}
+
+#publictransport-stationboard tr td.publictransport-destination {
+  padding-left: 50px;
+
+  text-align: left;
+}
+
+#publictransport-stationboard tr td.publictransport-destination .publictransport-stations {
+  text-align: left;
+}
+
+#publictransport-stationboard tr td.publictransport-name {
+  padding-left: 50px;
+
+  text-align: left;
+}
+
+#publictransport-stationboard tr td.publictransport-platform {
+  padding-left: 50px;
+
+  text-align: right;
+}

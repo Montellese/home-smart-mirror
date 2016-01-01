@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Home: Smart Mirror</title>
+
+    <!-- meta -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+
+    <!-- Font -->
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic,700,700italic' rel='stylesheet' type='text/css'>
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="css/layout.css" />
+    <link rel="stylesheet" type="text/css" href="css/calendar.css" />
+    <link rel="stylesheet" type="text/css" href="css/datetime.css" />
+    <link rel="stylesheet" type="text/css" href="css/publictransport.css" />
+    <link rel="stylesheet" type="text/css" href="css/weather.css" />
+    <link rel="stylesheet" type="text/css" href="css/weather-icons.min.css">
+
+    <!-- JavaScript -->
+    <script type="text/javascript" src="js/lib/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="js/lib/moment-with-locales-2.10.6.min.js"></script>
+    <script src="https://apis.google.com/js/client.js"></script>
+
+    <script type="text/javascript" src="js/config.js"></script>
+    <script type="text/javascript" src="js/helper.js"></script>
+
+    <script type="text/javascript" src="js/calendar.js"></script>
+    <script type="text/javascript" src="js/datetime.js"></script>
+    <script type="text/javascript" src="js/publictransport.js"></script>
+    <script type="text/javascript" src="js/weather.js"></script>
+
+    <script type="text/javascript">
+      $(document).ready(function() {
+        // globally set the locale
+        moment.locale(config.lang);
+
+        // load the proper language
+        $.getScript('lang/' + config.lang + '.js');
+
+        // start all widgets
+        datetime.start();
+        calendar.start();
+        weather.start();
+        publictransport.start();
+      });
+    </script>
+  </head>
+  <body>
+    <div class="top hcenter">
+      <div id="datetime">
+        <div id="date"></div>
+        <ul id="time">
+          <li id="hoursminutes"></li>
+          <li id="seconds"></li>
+        </ul>
+      </div>
+      <div id="weather-current"></div>
+    </div>
+
+    <div class="vcenter left">
+      <div id="weather-forecast"></div>
+    </div>
+
+    <div class="vcenter hcenter">
+    </div>
+
+    <div class="vcenter right">
+    </div>
+
+    <div class="bottom left">
+      <div id="publictransport-stationboard"></div>
+    </div>
+
+    <div class="bottom hcenter">
+    </div>
+
+    <div class="bottom right">
+      <div id="calendar-authorization" class="widget-heading">
+        <button id="calendar-authorization-button" onclick="calendar.google.handleAuthClick(event)">Authorize Google Calendar</button>
+      </div>
+      <div id="calendar-events"></div>
+    </div>
+  </body>
+</html>

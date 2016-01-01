@@ -1,0 +1,43 @@
+#calendar-authorization {
+  display: none;
+
+  color: #FF0000;
+}
+
+#calendar-authorization button#calendar-authorization-button {
+  background-color: #000000;
+
+  border-color: #FF0000;
+  border-width: 5px;
+  border-style: solid;
+
+  color: #FF0000;
+}
+
+#calendar-events {
+}
+
+#calendar-events tr td.date {
+  text-align: right;
+}
+
+#calendar-events tr td.weekday {
+  text-align: right;
+}
+
+#calendar-events tr td.summary {
+  padding-left: 50px;
+
+  text-align: left;
+}
+
+#calendar-events tr td.startend {
+  padding-left: 50px;
+
+  text-align: left;
+}
+
+#calendar-events tr td.weather {
+  padding-left: 50px;
+  text-align: right;
+}
