@@ -26,13 +26,13 @@
 }
 
 #calendar-events tr td.summary {
-  padding-left: 50px;
+  padding-left: 20px;
 
   text-align: left;
 }
 
 #calendar-events tr td.startend {
-  padding-left: 50px;
+  padding-left: 20px;
 
   text-align: left;
 }

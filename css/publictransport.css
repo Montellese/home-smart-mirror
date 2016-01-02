@@ -6,7 +6,7 @@
 }
 
 #publictransport-stationboard tr td.publictransport-destination {
-  padding-left: 50px;
+  padding-left: 20px;
 
   text-align: left;
 }
@@ -16,13 +16,13 @@
 }
 
 #publictransport-stationboard tr td.publictransport-name {
-  padding-left: 50px;
+  padding-left: 20px;
 
   text-align: left;
 }
 
 #publictransport-stationboard tr td.publictransport-platform {
-  padding-left: 50px;
+  padding-left: 20px;
 
   text-align: right;
 }
