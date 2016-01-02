@@ -36,8 +36,3 @@
 
   text-align: left;
 }
-
-#calendar-events tr td.weather {
-  padding-left: 50px;
-  text-align: right;
-}

@@ -171,6 +171,6 @@ var calendar = {
     if (!fullday)
       startend = moment(start).format('HH:mm') + ' - ' + moment(end).format('HH:mm');
 
-    $("#calendar-events table").append('<tr><td class="date widget-heading">' + moment(start).format('D. MMM') + '</td><td class="summary widget-heading">' + summary + '</td><td class="weather" colspan="2"></td></tr><tr><td class="weekday widget-detail">' + moment(start).format('ddd') + '</td><td class="startend widget-detail">' + startend + '</td></tr>');
+    $("#calendar-events table").append('<tr><td class="date widget-heading">' + moment(start).format('D. MMM') + '</td><td class="summary widget-heading">' + summary + '</td></tr><tr><td class="weekday widget-detail">' + moment(start).format('ddd') + '</td><td class="startend widget-detail">' + startend + '</td></tr>');
   }
 };
