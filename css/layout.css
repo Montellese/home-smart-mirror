@@ -12,30 +12,35 @@ html, body {
   -webkit-font-smoothing: antialiased;
 }
 
-.top {
+.top, .vcenter, .bottom, .left, .hcenter, .right {
   position: absolute;
+}
+
+.top {
   top: 50px;
 }
 
 .vcenter {
-  position: absolute;
   top: 50%;
-  margin-top: -250px;
-  margin-bottom: -250px;
+  margin-top: -250px; /* Adjust depending on display resolution */
+  margin-bottom: -250px; /* Adjust depending on display resolution */
 }
 
 .bottom {
-  position: absolute;
   bottom: 50px;
 }
 
+.left, .right {
+  max-width: 450px; /* Adjust depending on display resolution */
+  overflow: hidden;
+  white-space: nowrap;
+}
+
 .left {
-  position: absolute;
   left: 50px;
 }
 
 .hcenter {
-  position: absolute;
   left: 50px;
   right: 50px;
 
@@ -43,7 +48,6 @@ html, body {
 }
 
 .right {
-  position: absolute;
   right: 50px;
 }
 
