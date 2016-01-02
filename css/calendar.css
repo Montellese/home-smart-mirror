@@ -17,22 +17,22 @@
 #calendar-events {
 }
 
-#calendar-events tr td.date {
+#calendar-events table {
+  width: 100%;
+  max-width: inherit;
+
+  table-layout: fixed;
+}
+
+#calendar-events tr td.date, #calendar-events tr td.weekday {
+  width: 25%;
   text-align: right;
 }
 
-#calendar-events tr td.weekday {
-  text-align: right;
-}
-
-#calendar-events tr td.summary {
+#calendar-events tr td.summary, #calendar-events tr td.startend {
   padding-left: 20px;
 
   text-align: left;
-}
-
-#calendar-events tr td.startend {
-  padding-left: 20px;
-
-  text-align: left;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
