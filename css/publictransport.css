@@ -2,7 +2,7 @@
 }
 
 #publictransport-stationboard tr td.publictransport-departure {
-  text-align: left;
+  text-align: right;
 }
 
 #publictransport-stationboard tr td.publictransport-destination {
