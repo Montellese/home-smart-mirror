@@ -11,10 +11,6 @@
   text-align: left;
 }
 
-#publictransport-stationboard tr td.publictransport-destination .publictransport-stations {
-  text-align: left;
-}
-
 #publictransport-stationboard tr td.publictransport-name {
   padding-left: 20px;
 
