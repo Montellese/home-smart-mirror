@@ -138,7 +138,8 @@ var weather = {
             return;
 
           var html = "";
-          for (i = 0; i < result.list.length; i++) {
+          var forecastDays = Math.min(result.list.length, config.weather.forecastDays)
+          for (i = 0; i < forecastDays; i++) {
             var day = result.list[i];
 
             var time = helper.toMillisecondsDate(day.dt);

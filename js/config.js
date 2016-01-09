@@ -21,6 +21,7 @@ var config = {
 
   weather: {
     refreshIntervalMs: 3600000,
+    forecastDays: 8,
     units: "metric",
 
     openweathermap: {
