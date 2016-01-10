@@ -24,14 +24,12 @@
   table-layout: fixed;
 }
 
-#calendar-events tr td.date {
+#calendar-events tr td.date, #calendar-events tr td.weekday {
   width: 25%;
   text-align: right;
 }
 
-
-
-#calendar-events tr td.summary, #calendar-events tr td .startend {
+#calendar-events tr td.summary, #calendar-events tr td.startend {
   padding-left: 20px;
 
   text-align: left;
