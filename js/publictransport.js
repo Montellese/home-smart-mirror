@@ -85,12 +85,12 @@ var publictransport = {
               stations += matchingStations[j].name;
             }
 
-            html += '<tr valign="top"><td class="publictransport-departure"><div class="widget-heading">' + moment(departure).format('HH:mm') + '</div>'
-                    + '<div class="publictransport-duration widget-detail">' + moment.utc(duration).format('HH:mm') + '</div></td>'
-                  + '<td class="publictransport-destination"><div class="widget-heading">' + destination + '</div>'
-                    + '<div class="publictransport-stations widget-detail">' + stations + '</div></td>'
-                  // TODO: + '<td class="publictransport-name">' + name + '</td>'
-                  + '<td class="publictransport-platform widget-detail">' + platform + '</td></tr>';
+            html += '<tr><td class="publictransport-departure widget-heading">' + moment(departure).format('HH:mm') + '</td>'
+                    + '<td class="publictransport-destination widget-heading">' + destination + '</td>'
+                    + '<td class="publictransport-platform widget-detail">' + platform + '</td>'
+                  + '<tr><td class="publictransport-duration widget-detail">' + moment.utc(duration).format('HH:mm') + '</td>'
+                    + '<td class="publictransport-stations widget-detail">' + stations + '</div></td>'
+                    + '<td></td></tr>';
           }
 
           var publicTransportStationboardTag = $("#publictransport-stationboard");
